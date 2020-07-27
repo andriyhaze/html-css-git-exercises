@@ -6,3 +6,152 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
+
+
+
+/* Header */
+body{
+    background-color: teal;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: wheat;
+}
+
+header {
+    position: relative;
+    background-color: brown;
+    height: 40px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    padding: 5px 50px 50px 15px;
+    border-radius: 5px;
+}
+
+
+/* Navigation */
+
+#nav {
+    width:750px;
+    margin:0 auto;
+    list-style:none;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+#nav li {
+    float:left;
+    background: #D2AB67;
+}
+
+#nav li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#nav li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#nav a {
+    display:block;
+    text-align:center;
+    width:150px;
+    text-decoration: none; 
+    color: #fff;
+}
+#nav a:hover {
+    color: #D2AB67;
+    background-color: brown;
+}
+
+#nav a:first-child:hover{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#nav a:last-child:hover{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*Articles */
+
+.article {
+    margin: 100px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+.article h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.article p{
+    text-align: center;
+    margin: 40px;
+}
+.article img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blue {
+    background-color: #2D6281;
+}
+.blue h2{
+    color: wheat;
+}
+.grey {
+    background-color: #B0B0B0;
+}
+.grey h2{
+    color: #581845;
+}
+.red {
+    background-color: #D65858;    
+}
+.red h2{
+    color: #FFC300;
+}
+.green {
+    background-color: #73B155;
+}
+.green h2{
+    color:#B16055;
+}
+.purple {
+    background-color: #9C3F8C;
+}
+.purple h2{
+    color: #DAF7A6;
+}
+
+
+
+
+
+footer {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color:;
+    border-top: 1px solid;
+}
+footer p{
+    margin-top: 20px;
+}
+footer span{
+    color: #581845;
+    font-size: large;
+}
+footer a{
+    text-decoration: none;
+    color: #FF7F50;
+    font-size: large;
+}
+footer a:hover{
+    font-size: xx-large;
+    color: #581845
+}
