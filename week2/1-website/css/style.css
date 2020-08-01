@@ -1,19 +1,209 @@
-
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+/* General */
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
+
+/* Buttons */
+
+.content button{
+    color: #DDD;
+    background-color: #F15A29;
+    border-color: #F15A29;
+    padding: 16px 24px;
+    border-radius: 5px;
+    align-items: center;
+    border-style: none;
+    font-size: 1.125rem;
+}
+.content button:hover{
+    background-color: #CC5500;
+}
+
+
+
+/* Navbar */
+
+header{
+    border-bottom: 1px solid #DDD;
+    max-width: 700px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links > * {
+    margin: 1em 0;
+  }
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li a{
+    margin: 20px;
+    color: #838994;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+
+
+/* Introduction */
+
+.introduction {
+    background-image: url(../img/first-background.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 45rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    margin-top: 17.5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #DDD;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 2rem;
+    font-weight: 200;
+    color: #DDD;
+}
+
+
+
+
+/* Cases */
+
+.cases-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+
+.cases h2 {
+    font-size: 44px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.caption {
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+.line{
+    border-top: solid #838994 1px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+footer {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem 0 3rem;
+}
+
+footer h5{
+    font-size: 20px;
+    font-weight: 250;
+}
+
+.social-icons {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    border-radius: 80px;
+    box-shadow: 0px 0px 5px #888;
+    padding: 0.5em 0.6em;
+    margin: 10px;
+    width: 15px;
+}
+
+.social-icons .twitter {
+    color: #55acee;
+}
+.social-icons .facebook{
+    color: #4c66a4;
+}
+.social-icons .instagram {
+    color: #3f729b;
+}
+
+.copy {
+    font-size: 0.9rem;
+    color: #838994;
+}
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 570px) {
+    .cases-content{
+      flex-direction: column;
+      align-content: center;
+    }
+    .cases-content img{
+        width: 400px;
+    }
+    .caption {
+        font-size: 50px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+  
