@@ -94,16 +94,16 @@ button {
 	border-radius: 0;
 	background-image:     
 		linear-gradient(
-		rgba(236, 119, 119, 0.45), 
-		rgba(202, 86, 86, 0.45)), 
-		url("/images/header-bike.jpg");
+		rgba(109, 109, 109, 0.45), 
+		rgba(90, 90, 90, 0.45)), 
+		url("../images/header-bike.jpg");
 	color: #fff;
 
 
 }
 .jumbotron h1{
 	font-weight: lighter;
-	font-size: 50px;
+	font-size: 12vw;
 	color: #EAEAEA;
 	
 }
@@ -111,6 +111,42 @@ button {
 	font-weight: lighter;
 	font-size: 20px;
 }
+
+/* Flex Container */
+
+.flex-container{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	
+}
+
+.flex-container div{
+	border-style: solid;
+	width: 150px;
+	height: 150px;
+	
+	background-color: #F1F1F1;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.flex-container div:first-child{
+	border-color: indigo;
+}
+.flex-container div:nth-child(2){
+	border-color: hotpink;
+}
+.flex-container div:last-child{
+	border-color: greenyellow;
+}
+
+
 
 /* Headings */
 .heading-underline {
@@ -138,9 +174,11 @@ button {
 /* Article */
 
 .article2 {
+	box-sizing: border-box;
 	margin: 30px;
 	padding: 20px;
 	width: 40%;
+	height: 250px;
 	float: left;
 	border-style: solid;
 	border-width: 1px;
@@ -179,12 +217,17 @@ button {
 	margin-bottom: 0;
 }
 
-.article img {
-	width: 30%;
-	text-align: right;
-	float: left;
-	margin: 3px;
+.article-upcomming img{
+	max-width: 100px;
+	height: 80px;
+	margin-right: 3px;
 }
+	
+
+.article-upcomming {
+	display: flex;
+}
+
 
 aside p{
 	text-align: left;
@@ -195,6 +238,7 @@ aside p{
     height:auto;
     padding:1%;
 }
+
 
 /* Footer */
 .footer {
@@ -215,3 +259,27 @@ aside p{
 	   max-height: 80px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+
+	.jumbotron {
+		padding: 10px;
+		margin: 5px;
+	}
+
+
+	.article2 {
+		width: 90%;
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 610px){
+	.article2 {
+		width: 90%;
+		margin: 5px;
+	}
+}
+
+
+
