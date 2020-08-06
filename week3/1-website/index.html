@@ -1,16 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/menu.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <div class="header">
+        <nav role="navigation">
+          <div class="navbar">
+            <div class="logo">
+              <a href="#"><img src="/images/logo.png" alt="LOGO" /></a>
+            </div>
+            <div class="burger">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" class="nav_items">
+                  <a href="#">
+                    <li>HOME</li>
+                  </a>
+                  <a href="#">
+                    <li>CAKES</li>
+                  </a>
+                  <a href="#">
+                    <li>ORDERING</li>
+                  </a>
+                  <a href="#">
+                    <li>LESSONS</li>
+                  </a>
+                  <a href="#" target="_blank">
+                    <li>ABOUT</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="contact">
+              <a href="#"><img src="/images/contact.png" alt="CONTACT" /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <div class="main">
+        <div class="main_title">
+          <h1>Welcome to the Baking House</h1>
+        </div>
+        <div class="main_text">
+          <h2>ABOUT US</h2>
+          <p>
+            We are a Traditional Bakery with refined experience in... Soluta
+            eligendi voluptate debitis inventore est autem veritatis nisi quam
+            labore velit. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Soluta eligendi voluptate debitis inventore est autem
+            veritatis nisi quam labore velit.
+          </p>
+        </div>
+        <div class="main_title">
+          <h1>Check our Cakes below!</h1>
+        </div>
+        <div class="main_text cakes">
+          <div>
+            <img src="./images/Cakes/cake-with-blackberries.jpg" alt="" />
+          </div>
+          <div><img src="./images/Cakes/cake-with-macarons.jpg" alt="" /></div>
+          <div>
+            <img src="./images/Cakes/not-technically-a-cake.jpg" alt="" />
+          </div>
+          <div><img src="./images/Cakes/wedding-cake.jpg" alt="" /></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li><a href="#">SITEMAP</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">DELIVERY</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">HOME</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
