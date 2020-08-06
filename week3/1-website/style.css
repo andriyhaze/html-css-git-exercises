@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans Condensed", sans-serif;
 }
+
 /* NAV HAMBURGER */
 
 .navbar {
@@ -11,12 +12,13 @@ body {
 .logo {
   margin-right: 20vw;
 }
-.logo img {
-  width: 20vw;
-}
 .contact {
   margin-left: 20vw;
 }
+.logo img {
+  width: 20vw;
+}
+
 .contact img {
   width: 20vw;
 }
@@ -58,48 +60,75 @@ main {
 .main {
   background-color: grey;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 2vw;
+  padding: 1vw;
   margin: 0px;
+}
+.main_image img {
+  width: 50vw;
+  border-radius: 3px;
 }
 
 .main_title {
   font-family: "Lemonada", cursive;
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: center;
-  background-color: grey;
+  background-color: #a75151;
   padding: 2vw;
   margin-bottom: 2vw;
+  border-radius: 4px;
+}
+.main_about {
+  max-width: auto;
+  margin: 1vw;
+  padding: 1vw;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-direction: row;
 }
 .main_text {
-  margin: 2vw;
-  padding: 3vw;
-  background-color: #3a3a3a;
-  border-radius: 10px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.main_text h2 {
-  font-size: 35px;
+.main_text .btn {
+  background-color: #535553;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+.main_about h2 {
+  font-size: 30px;
   text-align: center;
   padding: 2vw 0vw 4vw;
 }
-.main_text p {
-  font-size: 30px;
+.main_about p {
+  font-size: 25px;
   text-align: center;
+  padding: 10px;
+  margin: 5px;
 }
 
 .cakes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .cakes img {
-  width: 98%;
-  height: auto;
-  margin: 1vw;
-  border-radius: 5px;
+  margin: 3px;
+  border-radius: 2px;
 }
 
 /* FOOTER */
@@ -108,7 +137,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #3a3a3a;
-  padding: 1vw;
+  padding: 10px 0 10px;
 }
 .footer ul {
   display: flex;
@@ -118,4 +147,16 @@ footer {
 .footer a {
   color: rgb(255, 255, 255);
   margin: 1vw;
+}
+
+@media screen and (max-width: 700px) {
+  .main_image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contact {
+    display: none;
+  }
 }
