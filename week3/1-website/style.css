@@ -12,8 +12,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .logo {
-  margin-right: 20vw;
+  margin-left: 20vw;
 }
 .contact {
   margin-left: 20vw;
@@ -21,7 +22,6 @@ body {
 .logo img {
   width: 20vw;
 }
-
 .contact img {
   width: 20vw;
 }
@@ -30,6 +30,7 @@ body {
   margin: 1vw;
   border: solid 4px gray;
   border-radius: 10px;
+  background-color: green;
 }
 
 /* HEADER */
@@ -52,10 +53,8 @@ header {
 main {
   padding-top: 2px;
   display: flex;
-  background-color: ;
 }
 .main {
-  background-color: ;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -109,7 +108,7 @@ main {
   border-radius: 4px;
 }
 .cakes::before {
-  background-color: rgb(253, 169, 60);
+  background-color: green;
 }
 .main_text {
   display: flex;
@@ -117,12 +116,11 @@ main {
   justify-content: space-evenly;
 }
 .main_text .btn {
-  background-color: #af5c3b;
+  background-color: #9eaf3b;
   border: none;
   color: white;
   padding: 15px 32px;
   margin: 30px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: calc(25px + 0.5vw);
@@ -135,7 +133,7 @@ main {
   padding: 2vw 0vw 2vw;
 }
 .main_about p {
-  font-size: calc(30px + 0.5vw);
+  font-size: calc(40px + 0.5vw);
   text-align: center;
   padding: 10px;
   margin: 5px;
@@ -148,7 +146,7 @@ main {
   justify-content: space-around;
 }
 .cakes h2 {
-  color: rebeccapurple;
+  color: ;
   font-weight: 500;
   font-size: calc(40px + 1vw);
   padding: 0px;
