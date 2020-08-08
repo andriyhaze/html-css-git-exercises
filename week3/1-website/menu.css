@@ -19,7 +19,7 @@
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: rgb(117, 0, 0);
 }
 
 #menuToggle input {
@@ -99,7 +99,7 @@
 #menu {
   position: absolute;
   width: 100px;
-  margin: -80px 0 0 -90px;
+  margin: -20px;
   padding: 50px;
   padding-top: 125px;
   text-align: center;

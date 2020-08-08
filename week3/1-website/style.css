@@ -27,10 +27,10 @@ body {
 }
 .burger {
   padding: 2vw;
-  margin: 1vw;
+  margin: 2vw;
   border: solid 4px gray;
   border-radius: 10px;
-  background-color: green;
+  background-color: #9eaf3b;
 }
 
 /* HEADER */
@@ -146,7 +146,6 @@ main {
   justify-content: space-around;
 }
 .cakes h2 {
-  color: ;
   font-weight: 500;
   font-size: calc(40px + 1vw);
   padding: 0px;
@@ -181,7 +180,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .contact {
     display: none;
   }
